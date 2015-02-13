@@ -21,8 +21,18 @@ def insert_participant():
         "email":request.form['email'],
         "phone":request.form['phone'],
         "class": request.form['class'],
-        "gender":request.form['am-gender'],
-        "seeking":request.form['seeking']
+        "gender":request.form['gender'],
+        "seeking":request.form['seeking'],
+        "one": request.form["one"],
+        "two": request.form["two"],
+        "three": request.form["three"],
+        "four": request.form["four"],
+        "five": request.form["five"],
+        "six": request.form["six"],
+        "seven": request.form["seven"],
+        "eight": request.form["eight"],
+        "nine": request.form["nine"],
+        "ten": request.form["ten"]       
         }
     participants.insert(participant)
     return render_template('completed.html')
